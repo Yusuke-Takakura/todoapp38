@@ -12,6 +12,7 @@ const Form = ({ addTodo }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        //tirm()は空欄を認識しないプロパティ
         if (text.trim().length !== 0) {
             addTodo(text);
             setText('');
